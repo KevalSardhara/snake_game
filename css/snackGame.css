@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#board{
+    /* display: flex; */
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    border: 3px solid black;
+    background: linear-gradient(rgb(255, 255, 122),rgb(118, 182, 118));
+    width: 90vmin;
+    height: 92vmin;
+
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 1.5rem; */
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+.snake{
+    background-color: rgb(251, 255, 0);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    transform: scale(0.89);
+}
+
+.head{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.food{
+    background-color: rgb(0, 11, 163);
+    border: 2px solid rgb(255, 255, 255);
+    /* opacity: 1; */
+    border-radius: 3px;
+}
+
